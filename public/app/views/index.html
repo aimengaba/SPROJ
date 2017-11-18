@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Signin Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/signin.css" rel="stylesheet">
+    <script src="js/signIn.js"></script>
+  </head>
+  
+  <body>
+
+    <div class="container">
+
+      <form class="form-signin">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" oclick="signInFunction()">Sign in</button>
+        <button class="btn btn-lg btn-secondary btn-block" type="button">Register</button>
+      </form>
+
+    </div> <!-- /container -->
+  </body>
+  
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCcbt9XWxyIj8ZBr0davPnnPGD5aTDHWeg",
+    authDomain: "sproj-2ca67.firebaseapp.com",
+    databaseURL: "https://sproj-2ca67.firebaseio.com",
+    projectId: "sproj-2ca67",
+    storageBucket: "",
+    messagingSenderId: "289162020233"
+  };
+  firebase.initializeApp(config);
+</script>
+</html>
